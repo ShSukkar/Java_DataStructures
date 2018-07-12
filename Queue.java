@@ -1,13 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package java_datastructures;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Shatha
+ */
 public class Queue {
-   // your code is here
+    
+    public ArrayList<Integer> storage = new ArrayList<Integer>();
+    
     public void push(int pushedElement){
-       //your code is here
+       this.storage.add(pushedElement);
     }
     public void pop(){
-        //your code is here
+        this.storage.remove(0);
     }
     public void display(){
-        //your code is here
+        System.out.println(this.storage);
     }
-
 }
